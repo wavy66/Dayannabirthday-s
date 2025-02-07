@@ -5,31 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy 19th Birthday, My Dayanna Nadzirah!</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffe6f2;
+    }
+    .container {
+      display: none; /* Hide letter initially */
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #ff4d88;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff1a66;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Happy Birthday, My Love</h1>
-    <p> Sayang, today is all about celebrating you, the most amazing, beautiful, and kind-hearted person I know. </p>
-     <p>   From the moment you came into my life, you've filled it with love, laughter, and endless happiness. </p>
-     <p>    I know you sometimes feel insecure, but to me, you are perfect just the way you are.</p>
-     <p>    Your kindness, intelligence, and strength inspire me every day.    </p>
-     <p>   No matter what, I’ll always be here to remind you of your worth and love you with all my heart.     </p>
-     <p>    Happy Birthday, my baby Dayanna! May this year bring you all the happiness you deserve.</p>
-     <p>   I’m beyond grateful for you, and I hope you always remember how special you are.💕🎂🎉 </p>
-     <p>    Saya sayang awak, Dayanna Nadzirah</p>
-     <img src="https://raw.githubusercontent.com/wavy66/Dayannabirthday-s/main/images/photo.jpg" alt="Dayanna's Photo" class="birthday-photo">
 
+  <h1>🎉 Happy 19th Birthday, My Love! 🎂</h1>
+  <button class="btn" onclick="showLetter()">Tap to Read</button>
+
+  <div class="container" id="letter">
+    <h2>Happy Birthday, My Love</h2>
+    <p> Sayang, today is all about celebrating you, the most amazing, beautiful, and kind-hearted person I know. </p>
+    <p> From the moment you came into my life, you've filled it with love, laughter, and endless happiness. </p>
+    <p> I know you sometimes feel insecure, but to me, you are perfect just the way you are.</p>
+    <p> Your kindness, intelligence, and strength inspire me every day. </p>
+    <p> No matter what, I’ll always be here to remind you of your worth and love you with all my heart. </p>
+    <p> Happy Birthday, my baby Dayanna! May this year bring you all the happiness you deserve.</p>
+    <p> I’m beyond grateful for you, and I hope you always remember how special you are.💕🎂🎉 </p>
+    <p> Saya sayang awak, Dayanna Nadzirah</p>
     <p>With all my love,</p>
     <p>[Aiman Hamizan]</p>
-    <p><a href="https://github.com/wavy66/Dayannabirthday-s.git" target="_blank">View on GitHub</a></p>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-  confetti({
-    particleCount: 100,
-    spread: 70,
-    origin: { y: 0.6 }
-  });
-</script>
+
+  <script>
+    function showLetter() {
+      document.getElementById("letter").style.display = "block";
+      document.querySelector(".btn").style.display = "none";
+    }
+  </script>
+
 </body>
 </html>
